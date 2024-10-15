@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="height=device-height, 
+            width=device-width, initial-scale=1, minimum-scale=1,
+            maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <link rel="stylesheet" href='./scss/style.css'>
+    <title>Product designer</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <main class="main_block">
+            <div class="description">
+                <h1 class="main__title">Продуктовый дизайнер</h1>
+
+                <h2 class="salary">от 150 000 ₽/мес на руки</h2>
+
+                <div class="location__block">
+                    <p class="location"><img src="./icons/Icon.svg" alt=""> Москва, (м. Парк Победы)</p>
+                    <p class="location"><img src="./icons/Icon.svg" alt=""> Самара, улица Большевиков</p>
+    
+                    <p class="work__type">Можно удалённо по РФ</p>
+                </div>
+
+                <div class="info">
+                    <h3>График работы:</h3>
+                    <p>Свободное начало дня с 8:00 до 11:00 утра, последняя пятница месяца нерабочая. </p>
+                </div>
+
+                <div class="info">
+                    <h3>Оформление:</h3>
+                    <p>По ТК РФ, Самозанятый, ИП, ГПХ, Любой удобный формат</p>
+                </div>
+            </div>
+            
+            <div class="form_container">
+
+                <!-- Форма для записи -->
+                <form class="main__form" id="main" action="">
+                    <h2 class="form__title">Запишитесь на собеседование</h2>
+
+                    <p class="form__message">В течении 24 часов мы свяжемся с вами, чтобы подтвердить запись</p>
+
+                    <input type="text" placeholder="Имя" class="main__input">
+                    <input type="text" placeholder="Фамилия" class="main__input">
+                    <input type="text" placeholder="+7 (___) ___-__-__" class="main__input">
+
+                    <div class="approval__block">
+                        <input type="checkbox">
+
+                        <span>Согласие на <a href="">обработку персональных данных</a></span>
+                    </div>
+
+                    <button class="common_button full">Записаться на собеседование</button>
+                </form>
+
+                <!-- Форма отправленна -->
+                <div class="main__form" id="success">
+                    <h2 class="form__title">Вы успешно отправили заявку на собеседование</h2>
+
+                    <p class="form__message">В течении 24 часов рекрутер свяжется с вами, чтобы подтвердить вашу запись и назначить дату и время собеседования</p>
+                </div>
+
+                <!-- Ошибка при отправке -->
+                <div class="main__form" id="error">
+                    <h2 class="form__title">Что-то пошло не так!</h2>
+
+                    <p class="form__message">Попробуйте еще раз</p>
+
+                    <button class="common_button full">Записаться на собеседование</button>
+                </div>
+
+            </div>
+        </main>
+    
+        <div class="about_us">
+            <div class="team_block">
+                <h3 class="about__title">Компания и команда</h3>
+
+                <p>Наша команда развивает полезные и развлекательные сервисы, а также навигацию в высоконагруженных интерфейсах.</p>
+
+                <ul>
+                    <li>Мы Входим в топ-10 компаний в направлении FinTech</li>
+                    <li>Получили 2 международные награды за инновационность</li>
+                    <li>IT-аккредитованная компания</li>
+                </ul>
+            </div>
+
+            <div class="about_vacancy">
+                <h3 class="about__title">О вакансии</h3>
+                
+                <ul>
+                    <li>Вы будете плотно работать с ĸомандой продуĸта и влиять на него.</li>
+                    <li>Погрузитесь в UX-исследования и работу с метриĸами.</li>
+                    <li>В ĸомпании взрослая и гибĸая дизайн-система, а таĸже развитая дизайн-ĸультура.</li>
+                    <li>Каждый в нашей команде может привнести свою идею по развитию командных процессов и продукта.</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h3 class="about__title">Требуемые навыки</h3>
+
+                <div class="skills__flex">
+                    <div class="skill__item">Figma</div>
+                    <div class="skill__item">CJM</div>
+                    <div class="skill__item">UX-исследования</div>
+                    <div class="skill__item">JTBD</div>
+                </div>
+            </div>
+
+            <button class="common_button">Записаться на собеседование</button>
+        </div>
+    
+        <footer>
+            <h4 class="policy">Политика обработки персональных данных</h4>
+
+            <div class="contacts">
+                <div class="contacts__item">©️ 2024 - ООО ЭЙЧАРПРАЙМ <span>ИНН 7708437337</span> / <span>КПП 770801001</span> <span>ОГРН 1247700406931</span></div>
+                <div class="contacts__item">107140, РОССИЯ, Г. МОСКВА, УЛ. КРАСНОПРУДНАЯ, Д. 15, ПОМЕЩ. 3Н/2</div>
+                <div class="contacts__item">КОНТАКТЫ:  <span>8 (800) 777 06 28</span> INFO@HRPRIME.RU</div>
+            </div>
+
+            <p class="policy__description">
+                Сервис HRCall принадлежит компани ООО Эйчарпрайм, которая выполняет работы по разработке, 
+                адаптации и модификации программ для ЭВМ, баз данных (программных средств и информационных 
+                продуктов вычислительной техники), услуги/работы по установке, тестированию и сопровождению 
+                программ для ЭВМ, баз данных, консультации и иные услуги, необходимые заказчикам в связи с 
+                осуществлением их деятельности
+            </p>
+        </footer>
+
+    </div>
+
+        <div class="gradient green"></div>
+        <div class="gradient blue"></div>
+        <div class="gradient blue small"></div>
+        <div class="gradient red"></div>
+
+</body>
+</html>
